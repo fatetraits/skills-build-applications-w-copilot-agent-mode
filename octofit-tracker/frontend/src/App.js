@@ -5,12 +5,17 @@ import Leaderboard from './components/Leaderboard';
 import Teams from './components/Teams';
 import Workouts from './components/Workouts';
 import './App.css';
+import logo from './logo.svg';
 
 function App() {
   return (
     <Router>
       <div className="container">
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="logo">
+          <img src={logo} alt="OctoFit Logo" />
+          <h1>OctoFit Tracker</h1>
+        </div>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
           <div className="container-fluid">
             <Link className="navbar-brand" to="/">OctoFit Tracker</Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

@@ -4,7 +4,7 @@ function Leaderboard() {
   const [leaderboard, setLeaderboard] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:8000/api/leaderboard/')
+    fetch('https://Boss-8000.app.github.dev/api/leaderboard/')
       .then(response => response.json())
       .then(data => setLeaderboard(data))
       .catch(error => console.error('Error fetching leaderboard:', error));
@@ -12,8 +12,8 @@ function Leaderboard() {
 
   return (
     <div>
-      <h1>Leaderboard</h1>
-      <table>
+      <h1 className="text-primary">Leaderboard</h1>
+      <table className="table table-striped">
         <thead>
           <tr>
             <th>Username</th>

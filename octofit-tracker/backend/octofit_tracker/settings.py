@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-i_bzz$=p3jx&v_xm!swv=c@1@(2xuj16#7b%#t*35dsl(-=v^w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[REPLACE-THIS-WITH-YOUR-CODESPACE-NAME]-8000.app.github.dev']
 
 
 # Application definition
@@ -83,7 +83,7 @@ DATABASES = {
         "ENGINE": "djongo",
         "NAME": "octofit_db",
         "HOST": "localhost",
-        "PORT": 27017,
+        "PORT": 27018,
     }
 }
 
